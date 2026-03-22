@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momtazuddin Ahmed | Legacy of a Legend</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@300;400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .bengali-font {
+            font-family: 'Noto+Serif+Bengali', serif;
+        }
+        .bg-paper {
+            background-color: #fdfcf8;
+        }
+        .text-ink {
+            color: #1a1a1a;
+        }
+        .section-fade {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+        .section-fade.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-paper text-ink selection:bg-yellow-100">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-paper/80 backdrop-blur-md border-b border-stone-200">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-semibold tracking-tighter uppercase">Momtazuddin Ahmed</a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide">
+                <a href="#gallery" class="hover:text-stone-500 transition">Gallery</a>
+                <a href="#life" class="hover:text-stone-500 transition">Life</a>
+                <a href="#awards" class="hover:text-stone-500 transition">Awards</a>
+                <a href="#legacy" class="hover:text-stone-500 transition">Legacy</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-paper border-b border-stone-200 px-6 py-8 space-y-4">
+            <a href="#gallery" class="block text-lg">Gallery</a>
+            <a href="#life" class="block text-lg">Life</a>
+            <a href="#awards" class="block text-lg">Awards</a>
+            <a href="#legacy" class="block text-lg">Legacy</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-40 pb-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-sm uppercase tracking-widest text-stone-500 mb-6">In Loving Memory</h2>
+            <h1 class="text-5xl md:text-7xl font-light mb-8 tracking-tight">Professor <br/>Momtazuddin Ahmed</h1>
+            <p class="text-xl text-stone-600 font-light leading-relaxed max-w-2xl mx-auto">
+                Dramatist, Educationist, and Language Veteran. A life dedicated to the soul of Bengali literature.
+            </p>
+            <div class="mt-12 text-stone-400">
+                18th January, 1935 — 2nd June, 2019
+            </div>
+        </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-24 px-6 section-fade">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h3 class="text-3xl font-light">Timeless Memories</h3>
+                    <p class="text-stone-500 mt-2">A window into a life well-lived.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="aspect-[3/4] bg-stone-100 group overflow-hidden rounded-sm relative">
+                    <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&q=80&w=800" alt="Portrait" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700">
+                    <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition">Portrait</div>
+                </div>
+                <div class="aspect-[3/4] bg-stone-100 group overflow-hidden rounded-sm relative md:mt-12">
+                    <img src="https://images.unsplash.com/photo-1544640808-32ca72ac7f67?auto=format&fit=crop&q=80&w=800" alt="Family" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700">
+                    <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition">Family</div>
+                </div>
+                <div class="aspect-[3/4] bg-stone-100 group overflow-hidden rounded-sm relative">
+                    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&q=80&w=800" alt="Drama" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700">
+                    <div class="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition">Drama</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Life Chapters -->
+    <section id="life" class="py-24 px-6 bg-stone-50">
+        <div class="max-w-4xl mx-auto">
+            <div class="mb-20 section-fade">
+                <h3 class="text-4xl font-light mb-10">Early Life</h3>
+                <div class="space-y-6 text-lg text-stone-700 leading-relaxed font-light">
+                    <p>
+                        Born in the village of Aiho, West Bengal, Momtazuddin Ahmed's journey began on a winter Sunday in 1933. Though official records cite 1935, his father's records remember the cold afternoon of December 17th.
+                    </p>
+                    <p>
+                        His name, originally Tamizuddin Miah, was changed by a village scholar to Momtazuddin—a name that would eventually echo through the halls of Bengali academia and theater. His education started at the age of four, sparked by the poems taught to him by his elder sister, Anju Bubu.
+                    </p>
+                </div>
+            </div>
+
+            <div class="border-l border-stone-300 pl-8 md:pl-16 py-10 space-y-20 section-fade">
+                <div>
+                    <h4 class="text-2xl mb-4">The Formative Years</h4>
+                    <p class="text-stone-600 leading-relaxed">
+                        At Malda District School, he ranked first in his admission test, beginning a chapter of strict discipline under Headmaster Dr. Enamul Haque. It was here, among the news updates written on the school veranda, that his intellectual curiosity flourished.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-2xl mb-4">Partition and Resilience</h4>
+                    <p class="text-stone-600 leading-relaxed">
+                        The partition of 1947 brought upheaval. Displaced to Bholahat in Pakistan (now Bangladesh), he completed his matriculation at Rameshwar Secondary School. Despite the chaos of the era, his dedication to the Bengali language never wavered.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="py-24 px-6 section-fade">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-3xl font-light mb-16 text-center italic">Distinguished Recognitions</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+                <div class="group border-b border-stone-200 pb-4">
+                    <div class="text-xs text-stone-400 mb-1 uppercase tracking-widest">Highest Civilian Honor</div>
+                    <div class="text-xl group-hover:pl-2 transition-all">Ekushey Padak</div>
+                </div>
+                <div class="group border-b border-stone-200 pb-4">
+                    <div class="text-xs text-stone-400 mb-1 uppercase tracking-widest">Literature</div>
+                    <div class="text-xl group-hover:pl-2 transition-all">Bangla Academy Literary Award</div>
+                </div>
+                <div class="group border-b border-stone-200 pb-4">
+                    <div class="text-xs text-stone-400 mb-1 uppercase tracking-widest">Culture</div>
+                    <div class="text-xl group-hover:pl-2 transition-all">Bangladesh Shilpakala Academy Award</div>
+                </div>
+                <div class="group border-b border-stone-200 pb-4">
+                    <div class="text-xs text-stone-400 mb-1 uppercase tracking-widest">Legacy</div>
+                    <div class="text-xl group-hover:pl-2 transition-all">Sheltech Honor</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Last Act (Memorial) -->
+    <section id="legacy" class="py-24 px-6 bg-ink text-white">
+        <div class="max-w-3xl mx-auto text-center">
+            <h3 class="text-3xl font-light mb-12">The Final Act</h3>
+            <div class="space-y-8 text-stone-300 leading-relaxed text-lg font-light italic">
+                <p>"Abba, I'm here," the son whispered.</p>
+                <p>
+                    Momtazuddin lay motionless, a muted echo of his vibrant self. His eyes, though open, held no light; his voice, a dry rustle. He managed a final breath at 3:48 PM, leaving behind a legacy that would never be silenced.
+                </p>
+                <p>
+                    Somewhere beyond the sterile white of the ICU, the legendary dramatist was already composing a new drama, his words unfurling like dawn over an unseen stage.
+                </p>
+            </div>
+            <div class="mt-16 text-stone-500 uppercase tracking-widest text-sm">
+                Bon Voyage, Abba.
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Archive Integration -->
+    <section class="py-24 px-6 bg-paper">
+        <div class="max-w-6xl mx-auto text-center">
+            <h3 class="text-3xl font-light mb-6">Digital Archive</h3>
+            <p class="text-stone-500 mb-12">Preserving the voice and vision of the maestro.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Mockup Video Frames -->
+                <div class="bg-stone-100 aspect-video rounded-sm flex items-center justify-center border border-stone-200 group cursor-pointer overflow-hidden relative">
+                    <div class="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition"></div>
+                    <span class="text-stone-400 uppercase text-xs tracking-tighter">শেষ ভাষণ (Final Speech)</span>
+                </div>
+                <div class="bg-stone-100 aspect-video rounded-sm flex items-center justify-center border border-stone-200 group cursor-pointer overflow-hidden relative">
+                    <div class="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition"></div>
+                    <span class="text-stone-400 uppercase text-xs tracking-tighter">আত্মজীবনী (Autobiography)</span>
+                </div>
+                <div class="bg-stone-100 aspect-video rounded-sm flex items-center justify-center border border-stone-200 group cursor-pointer overflow-hidden relative">
+                    <div class="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition"></div>
+                    <span class="text-stone-400 uppercase text-xs tracking-tighter">নাট্যকর্ম (Dramatic Works)</span>
+                </div>
+            </div>
+            <a href="https://youtube.com" target="_blank" class="inline-block mt-12 px-8 py-3 border border-stone-300 text-stone-600 hover:bg-stone-100 transition rounded-full text-sm">Visit YouTube Gallery</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 px-6 border-t border-stone-200 bg-white">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="text-stone-400 text-sm mb-8 md:mb-0">
+                &copy; 2024 Momtazuddin Ahmed Foundation. All rights reserved.
+            </div>
+            <div class="flex space-x-8 text-sm text-stone-600">
+                <a href="mailto:momtazuddinahmed.bd@gmail.com" class="hover:text-stone-900 transition underline underline-offset-4">Contact</a>
+                <span class="text-stone-300">|</span>
+                <span class="text-stone-400 uppercase tracking-widest text-[10px]">Dev by @NiazDeCoder</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section-fade').forEach(el => observer.observe(el));
+
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close menu on link click
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
+
