@@ -1,0 +1,48 @@
+body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .bengali-font {
+            font-family: 'Noto Serif Bengali', serif;
+        }
+        .bg-paper {
+            background-color: #fdfcf8;
+        }
+        .text-ink {
+            color: #1a1a1a;
+        }
+        .section-fade {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+        .section-fade.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive Hero Background Logic */
+        .hero-section {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Desktop View (Shadow from Left) */
+        @media (min-width: 769px) {
+            .hero-section {
+                background-image: linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 40%, rgba(0,0,0,0) 100%), url('assets/hero.webp');
+                height: 90vh;
+            }
+        }
+
+        /* Mobile View (Shadow from Bottom) */
+        @media (max-width: 768px) {
+            .hero-section {
+                background-image: linear-gradient(to top, rgba(0,0,0,0.95) 15%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0) 100%), url('assets/hero_mobile.webp');
+                min-height: 100vh;
+                display: flex;
+                align-items: flex-end;
+                padding-bottom: 3rem;
+            }
+        }

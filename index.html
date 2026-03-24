@@ -6,61 +6,12 @@
     <title>Momtazuddin Ahmed | Legacy of a Legend</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@300;400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            scroll-behavior: smooth;
-        }
-        .bengali-font {
-            font-family: 'Noto Serif Bengali', serif;
-        }
-        .bg-paper {
-            background-color: #fdfcf8;
-        }
-        .text-ink {
-            color: #1a1a1a;
-        }
-        .section-fade {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.8s ease-out;
-        }
-        .section-fade.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Responsive Hero Background Logic */
-        .hero-section {
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
-        /* Desktop View (Shadow from Left) */
-        @media (min-width: 769px) {
-            .hero-section {
-                background-image: linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 40%, rgba(0,0,0,0) 100%), url('assets/hero.webp');
-                height: 90vh;
-            }
-        }
-
-        /* Mobile View (Shadow from Bottom) */
-        @media (max-width: 768px) {
-            .hero-section {
-                background-image: linear-gradient(to top, rgba(0,0,0,0.95) 15%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0) 100%), url('assets/hero_mobile.webp');
-                min-height: 100vh;
-                display: flex;
-                align-items: flex-end;
-                padding-bottom: 3rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-paper text-ink selection:bg-stone-300">
 
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 bg-paper/80 backdrop-blur-md border-b border-stone-200">
+    <nav class="fixed top-0 w-full z-50 bg-white border-b border-stone-200">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="#" class="text-xl font-semibold tracking-tighter uppercase">Momtazuddin Ahmed</a>
             <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide uppercase">
@@ -112,10 +63,10 @@
                     <h4 class="text-3xl md:text-4xl font-light mb-8 leading-snug">The Early Years <br class="hidden md:block"/>in West Bengal</h4>
                     <div class="space-y-6 text-stone-600 leading-relaxed font-light text-sm md:text-base">
                         <p>
-                            Born in the village of Aiho, West Bengal, Professor Momtazuddin Ahmed's life was a testament to the power of the written word. While official documents note his birth as January 18, 1935, family lore recalls a winter afternoon in 1933.
+                            Professor Momtazuddin Ahmed was born in the village of Aiho, West Bengal, on December 17, 1933, though official records later adjusted his birth date to January 18, 1935, to align with school completion age requirements. Originally named Tamizuddin Miah, he was renamed Momtazuddin by his father following the advice of a local scholar, though he remained affectionately known as Manjur within his family.
                         </p>
                         <p>
-                            His early education was shaped by the poems taught by his elder sister, Anju Bubu, and a rigorous academic upbringing at Malda District School.
+                            His early education was rooted in the warmth of his household; he was introduced to poetry by his elder sister at age four and guarded by his grandmother’s deep affection, which often shielded him from the strict discipline his father intended. This blend of formal instruction and familial indulgence shaped the foundational years of the renowned scholar.
                         </p>
                     </div>
                 </div>
@@ -124,10 +75,7 @@
                     <h4 class="text-3xl md:text-4xl font-light mb-8 leading-snug">Education and <br class="hidden md:block"/>Identity</h4>
                     <div class="space-y-6 text-stone-600 leading-relaxed font-light text-sm md:text-base">
                         <p>
-                            The Partition of 1947 forced a relocation to Bholahat (now Bangladesh). Completing his matriculation amidst political shifts, he emerged as a voice for the Bengali identity.
-                        </p>
-                        <p>
-                            His transition into the world of drama allowed him to dissect the human condition, eventually becoming one of the most respected playwrights in South Asian history.
+                            Momtazuddin Ahmed’s early academic journey was marked by both disciplined excellence and the shifting tides of history. After ranking first in his admission test to the prestigious Malda District School, he spent his formative years under the strict guidance of his uncle and the mentorship of influential teachers like Charuchandra Chattopadhyay. Though he initially excelled as a top-ranked student, his later years at the school saw a burgeoning interest in cinema and a move to a more relaxed living environment at his aunt’s house. This period of his life was ultimately disrupted by the Partition, which forced his relocation to Bholahat. Despite the upheaval of being expelled from his hostel and changing schools just months before his matriculation, he successfully completed his exams at Rameshwar Secondary School—an achievement that, while falling short of his own high academic expectations, remained a source of great pride for his family and a milestone in his village.
                         </p>
                     </div>
                 </div>
@@ -140,20 +88,48 @@
         <div class="max-w-7xl mx-auto">
             <div class="flex flex-col md:flex-row justify-between items-baseline mb-12 md:mb-16">
                 <h3 class="text-3xl md:text-4xl font-light tracking-tight">Gallery of Memories</h3>
-                <p class="text-stone-500 mt-2 md:mt-0 font-light italic text-sm">A visual archive of a legendary journey.</p>
+                <p class="text-stone-500 mt-2 md:mt-0 font-light italic text-sm">A visual archive of a legendary journey. Click on any image to see the magic</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6">
                 <div class="md:col-span-8 aspect-video bg-stone-100 overflow-hidden rounded-sm group relative">
                     <div class="w-full h-full bg-stone-200 animate-pulse absolute inset-0"></div>
-                    <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&q=80&w=1200" alt="Work" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-1000 relative z-10">
+                    <img src="assets/main/d1.webp" alt="Work" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-1000 relative z-10">
                 </div>
-                <div class="md:col-span-4 aspect-square md:aspect-auto bg-stone-100 overflow-hidden rounded-sm group relative">
-                    <img src="https://images.unsplash.com/photo-1544640808-32ca72ac7f67?auto=format&fit=crop&q=80&w=800" alt="Portrait" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-1000">
+                <div class="md:col-span-8 aspect-video bg-stone-100 overflow-hidden rounded-sm group relative">
+                    <div class="w-full h-full bg-stone-200 animate-pulse absolute inset-0"></div>
+                    <img src="assets/main/f15.webp" alt="Work" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-1000 relative z-10">
+                </div>
+                <div class="md:col-span-8 aspect-video bg-stone-100 overflow-hidden rounded-sm group relative">
+                    <div class="w-full h-full bg-stone-200 animate-pulse absolute inset-0"></div>
+                    <img src="assets/main/fp4.webp" alt="Work" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-1000 relative z-10">
+                </div>
+                <div class="md:col-span-8 aspect-video bg-stone-100 overflow-hidden rounded-sm group relative">
+                    <div class="w-full h-full bg-stone-200 animate-pulse absolute inset-0"></div>
+                    <img src="assets/main/o14.webp" alt="Work" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-1000 relative z-10">
+                </div>
+                <div class="md:col-span-8 aspect-video bg-stone-100 overflow-hidden rounded-sm group relative">
+                    <div class="w-full h-full bg-stone-200 animate-pulse absolute inset-0"></div>
+                    <img src="assets/main/s8.webp" alt="Work" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-1000 relative z-10">
+                </div>
+                <div class="md:col-span-8 aspect-video bg-stone-100 overflow-hidden rounded-sm group relative">
+                    <div class="w-full h-full bg-stone-200 animate-pulse absolute inset-0"></div>
+                    <img src="assets/main/p12.webp" alt="Work" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-1000 relative z-10">
                 </div>
             </div>
+            <!-- <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6">
+                <a href="gallery/drama.html" class="md:col-span-8 aspect-video bg-stone-100 overflow-hidden rounded-sm group relative">
+                    <div class="w-full h-full bg-stone-200 animate-pulse absolute inset-0"></div>
+                    <img src="assets/Drama/d1.png" alt="Work" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-1000 relative z-10">
+                </a>
+            </div> -->
         </div>
     </section>
-
+    <!-- Video Gallery -->
+     <section id="video">
+        <!-- Elfsight YouTube Gallery | Untitled YouTube Gallery -->
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-8dba87d2-7a1d-4ace-af6c-265bc75bf8cf" data-elfsight-app-lazy></div>
+     </section>
     <!-- Awards -->
     <section id="awards" class="py-24 md:py-32 px-6 section-fade">
         <div class="max-w-4xl mx-auto">
@@ -181,9 +157,14 @@
     <!-- Legacy -->
     <section id="legacy" class="py-32 px-6 bg-black text-white text-center">
         <div class="max-w-3xl mx-auto">
-            <h3 class="text-[10px] uppercase tracking-[0.5em] text-stone-600 mb-12">The Last Act</h3>
+            <h3 class="text-[10px] uppercase tracking-[0.5em] text-stone-1000 mb-12">The Last Act</h3>
             <p class="text-xl md:text-3xl font-light leading-relaxed text-stone-300 italic mb-12 px-4">
-                "His next act begins beyond the visible stage, where every word is eternal."
+                "When the son rushed into the ICU, fresh off the flight, his eyes searched for the familiar sight—Momtazuddin Ahmed, the legendary dramatist, who would always greet him with a radiant spark in his gaze, a smile like a child’s secret, and a flurry of kisses pressed to his palm. "Abba, I’m here," the son would whisper, and his father’s face would crinkle with triumph, as if his son’s arrival alone could defy mortality.
+But not this time.
+Momtazuddin lay motionless, a muted echo of his vibrant self. His eyes, though open, held no light; his voice, a dry rustle. "Ba… ba… you came," he managed, and the son’s heart fractured. He clasped his father’s hand—those slender, ink-stained fingers that had scripted a thousand stories—now limp and cool. Around them, the ICU buzzed with hushed urgency: a cousin reciting Surah Yasin, another trickling Zamzam water onto cracked lips, the rhythmic beep of the monitor counting down.
+The son, a doctor himself, watched the numbers plummet. MAP: 47. Pulse: 42. A statistician of grief. He pressed his forehead to his father’s feet, staining the sheets with tears. "Forgive me, Abba." No answer. Only the shudder of a final breath at 3:48 PM, and the cruel green line that followed.
+In the silence, he kissed Momtazuddin’s palm one last time—the hand that had penned revolutions, now stilled. A sob caught in his throat, but then, a thought: somewhere beyond the sterile white, his father was already composing a new drama, his words unfurling like dawn over an unseen stage.
+"Bon voyage, Abba," he murmured. "Your next act begins.""
             </p>
             <div class="text-stone-500 text-sm tracking-[0.2em] uppercase">
                 1935 — 2019
@@ -203,41 +184,12 @@
                     <a href="mailto:momtazuddinahmed.bd@gmail.com" class="hover:text-black transition">Contact</a>
                     <a href="#" class="hover:text-black transition">Archive</a>
                 </div>
-                <p class="text-stone-300 text-[9px] tracking-[0.3em] uppercase">Developed by @NiazDeCoder</p>
+                <a href="https://niazdecoder.netlify.app" target="_blank" class="text-stone-800 text-[9px] tracking-[0.3em] uppercase">Developed by @NiazDeCoder</a>
             </div>
         </div>
     </footer>
 
-    <script>
-        // Animation on scroll
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.section-fade').forEach(el => observer.observe(el));
-
-        // Mobile Menu toggle
-        const menuBtn = document.getElementById('mobile-menu-btn');
-        const menu = document.getElementById('mobile-menu');
-
-        menuBtn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-            // Disable scroll when menu is open
-            document.body.style.overflow = menu.classList.contains('hidden') ? 'auto' : 'hidden';
-        });
-
-        // Close menu on navigation
-        menu.querySelectorAll('a').forEach(a => {
-            a.addEventListener('click', () => {
-                menu.classList.add('hidden');
-                document.body.style.overflow = 'auto';
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
 
